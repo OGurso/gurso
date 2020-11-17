@@ -1,0 +1,288 @@
+body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.left h1{
+    font-family: 'Mrs Saint Delafield', cursive;
+    text-align: center;
+    font-size: 7rem;
+    color: white;
+    font-weight: 100;
+    margin: 0;
+}
+p{
+    font-size: 14px;
+}
+.left-text-wrap P{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #ffffff;
+    margin: 0;
+
+}
+.social{
+    position: absolute;
+    left: 3%;
+    bottom: 3%;
+}
+.social img{
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+}
+
+.s1-wrapper{
+    width: 100vw;
+    height: 100vh;
+}
+.left{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top, #a8928c, #9f8d7c, #8f8a70, #77896b, #5a8671, #4c8476, #3d827c, #2f7f83, #2f7f83, #2f7f83, #2f7f83, #2f7f83);    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.left-text-wrap{    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.map{
+    position: absolute;
+    left: 3%;
+    top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+}
+.map-text p{    
+    color: white;
+    text-align: left;
+    margin: 0px 5px;
+    padding: 5px 0px;
+}
+.map-text-adress{
+    border-bottom: 1px solid rgb(255, 255, 255);
+}   
+.map img{
+    filter: invert();
+}
+
+.menyback{
+    width: 400px;
+    height: 400px;
+    background: rgba(2, 2, 2, 0.589);
+    border-radius: 50%;
+    border: 1px solid white;
+    position: fixed;
+    top: 50%;
+    right: -450px;
+    transform: translate(-50%, -50%);
+    transition: all ease-in 0.3s;
+    z-index: 1;
+}
+
+
+.fp-right ul li{
+    padding: 5px 0;
+}
+.fp-tooltip{
+padding: 5px 0;
+}
+span{
+    background: rgb(255, 255, 255) !important;
+}
+
+.s2{
+    background-image: linear-gradient(to bottom, #a8928c, #9f8d7c, #8f8a70, #77896b, #5a8671, #4c8476, #3d827c, #2f7f83, #2f7f83, #2f7f83, #2f7f83, #2f7f83);}
+
+.s3{
+    background-image: linear-gradient(to top, #a8928c, #9f8d7c, #8f8a70, #77896b, #5a8671, #4c8476, #3d827c, #2f7f83, #2f7f83, #2f7f83, #2f7f83, #2f7f83);    background-position: center;
+}
+.nextpage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+
+/* todo-START-------------------------------- */
+.todo-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    padding-top: 20px;
+    overflow: hidden;
+}
+.wrapper{
+    width: 400px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.input-wrapper{
+    position: relative;
+    width: 100%;
+}
+.clearAll{
+    position: absolute;
+    top: 90%;
+    margin: 0 auto;
+    height: 50px;
+    width: 400px;
+
+}
+input{
+    width: 100%;
+    max-width: 340px;
+    padding: 20px 10px;
+    font-size: 20px;
+    padding-right: 80px ;
+
+
+}
+.inputBtn{
+    position: absolute;
+    top: 6px;
+    right: -20px;
+    padding: 12px 15px;
+    border: none;
+    font-size: 20px;
+    border: 2px solid black;
+    cursor: pointer;
+
+}
+
+
+.todo-container ul{
+    width: 100%;
+    align-self: center ;
+    list-style-type: none;
+    height: 65%;
+    
+}
+.todo-container li{
+    margin: 0;
+    background-color: whitesmoke;
+    font-size: 20px;
+    padding: 15px 10px;
+    margin-block-start: 5px;
+    cursor: pointer;
+
+}
+.todo-container span.delete{
+    float: right;
+    font-size: 15px;
+    border: 2px solid whitesmoke;   
+
+}
+
+span.delete:hover{
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.todo-ul li:hover{
+        background-color: rgb(196, 196, 196);
+}
+/* todo-SLUT-------------------------------- */
+
+
+
+
+
+
+/* GUESTBOOK-START---------------------------------------------------- */
+.guestbook-container{
+    padding-top: 30px;
+    display: grid;
+    place-content: center;
+}
+.guestbook-container h1{
+    text-align: center;
+
+}
+
+.guestbook-container .wrapper{
+    padding-top: 30px;
+    width: 100%;
+    height: 90vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+    align-content: center;
+}
+.input-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.input-container label{
+    font-family: arial;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.name-cont, .med-cont{
+    display: flex;
+    justify-content: flex-start;
+    /* width: 100%; */
+    /* padding: 10px 4px; */
+    align-items: center;
+}
+
+.input-container input{
+    height: 30px;
+    width: 180px;
+    padding: 3px;
+}
+
+.input-container input[type=text]{
+    width: 100%;
+    flex-grow: 3;
+}
+
+.button{
+    width: 100px;
+    align-self: center;
+    padding: 10px;
+    margin: 0 10px;
+}
+.message-container{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 300px;
+    padding: 10px;
+    margin: 20px;}
+    
+.all-messages span{
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+.all-messages p{
+    width: 300px;
+    /* padding: 10px; */
+    margin: 10px 0;
+    
+}
+
+/* GUESTBOOK-SLUT---------------------------------------------------- */

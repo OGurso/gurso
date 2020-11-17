@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Fullpage</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Mrs+Saint+Delafield&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+
+    <div class="menyback"></div>
+    <div id="fullpage">
+        <div class="section s1">
+            <div class="s1-wrapper">
+
+                <div class="left">
+
+                    <div class="left-text-wrap">
+
+                        <h1>Onur Gürsoy</h1>
+                        <p>Webious Utvecklionous</p>
+                    </div>
+                    <div class="map">
+                        <img src="img/perm_phone_msg_24px (1).png" alt="Ring">
+                        <div class="map-text">
+                            <p class="map-text-adress">Email: onur.gursoy@student.kyh.se</p>
+                            <p>Tel: 073 000 00 00</p>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <img src="img/twitter.png" alt="Twitter">
+                        <img src="img/fb.png" alt="Facebook">
+                        <img src="img/insta.png" alt="Instagram">
+                    </div>
+                </div>
+                <div class="right">
+
+                </div>
+            </div>
+        </div>
+        <div class="section s2">
+            <div class="todo-container">
+                <div class="wrapper">
+                    <h1 class="title">ToDo med DOMen</h1>
+                    <div class="input-wrapper">
+                        <input type="text" name="text">
+                        <button class="inputBtn">&#10133;
+                        </button>
+                    </div>
+                    <ul class="todo-ul">
+
+                    </ul>
+                </div>
+                <button class="clearAll">Rensa Listan</button>
+            </div>
+        </div>
+        <div class="section s3">
+
+
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
+    <script>
+        new fullpage("#fullpage", {
+            autoScrolling: true,
+            navigation: true,
+            navigationTooltips: ["Hem", "Projekt 1", "Projekt 2"],
+            showActiveTooltip: true,
+        })
+    </script>
+</body>
+
+</html>
